@@ -42,6 +42,21 @@ fetch('songList.json')
 
 configureLoadButton();
 
+const savedAutoPlay = JSON.parse(
+    localStorage.getItem(`${config.localStoragePrefix}-autoPlay`)
+);
+
+if (savedAutoPlay !== null) {
+    autoPlay = savedAutoPlay;
+}
+
+window.addEventListener("DOMContentLoaded", () => {
+    const checkbox = document.getElementById("autoplayCheckbox");
+    if (checkbox) {
+        checkbox.checked = autoPlay;
+    }
+});
+
 function configureLoadButton() {
     let loadButton = document.getElementById("load");
     let title = document.querySelector('.title');
@@ -128,8 +143,8 @@ function showDuel(id1, id2) {
     const percent = Math.floor(sortedNo * 100 / totalBattles);
     progressBar(`Battle no. ${battleNo}`, percent);
 
-    autoPlaySequential();
-
+    if (autoPlay) {
+        autoPlaySequential();
 }
 
 function autoPlaySequential() {
@@ -392,6 +407,9 @@ function result() {
 }
 
 function showSettings() {
+
+    document.getElementById("autoplayCheckbox").checked = autoPlay;
+
     document.getElementById("settingsModal").style.display = "block";
     document.getElementById("modalOverlay").style.display = "block";
 }
@@ -412,15 +430,38 @@ function selectOption(type, element) {
     } else if (text === 'Audio') {
         video = false;
     } else if (text === 'Europe') {
-        region = "eu"
+        region = "eu";
     } else if (text === 'NA West') {
         region = "naw";
     } else if (text === 'NA East') {
-        region = "nae"
+        region = "nae";
     }
 
-    showDuel(sortedIndexList[leftIndex][leftInnerIndex], sortedIndexList[rightIndex][rightInnerIndex]);
+    localStorage.setItem(
+        `${config.localStoragePrefix}-video`,
+        JSON.stringify(video)
+    );
 
+    localStorage.setItem(
+        `${config.localStoragePrefix}-region`,
+        JSON.stringify(region)
+    );
+
+    if (sortedIndexList.length > 0 && leftIndex >= 0) {
+        showDuel(
+            sortedIndexList[leftIndex][leftInnerIndex],
+            sortedIndexList[rightIndex][rightInnerIndex]
+        );
+    }
+}
+
+function toggleAutoplay(checkbox) {
+    autoPlay = checkbox.checked;
+
+    localStorage.setItem(
+        `${config.localStoragePrefix}-autoPlay`,
+        JSON.stringify(autoPlay)
+    );
 }
 
 function copyToClipboard() {
