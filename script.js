@@ -28,6 +28,8 @@ let totalBattles = 0;
 let video = true;
 let region = "eu";
 
+let autoPlay = true;
+
 fetch('songList.json')
     .then(response => response.json())
     .then(data => {
@@ -126,9 +128,44 @@ function showDuel(id1, id2) {
     const percent = Math.floor(sortedNo * 100 / totalBattles);
     progressBar(`Battle no. ${battleNo}`, percent);
 
+    autoPlaySequential();
+
+}
+
+function autoPlaySequential() {
+    if (!autoPlay) return;
+
+    const media = document.querySelectorAll(".music-card audio, .music-card video");
+
+    if (media.length === 0) return;
+
+    media.forEach(m => {
+        m.pause();
+        m.currentTime = 0;
+    });
+
+    let current = 0;
+
+    function playCurrent() {
+        if (current >= media.length) return;
+
+        media[current].play().catch(err => console.log(err));
+
+        media[current].onended = () => {
+            current++;
+            playCurrent();
+        };
+    }
+
+    playCurrent();
 }
 
 function pick(sortType) {
+    
+    document.querySelectorAll("audio, video").forEach(m => {
+        m.pause();
+        m.currentTime = 0;
+    });
 
     sortedIndexListPrev = sortedIndexList.slice(0);
     recordDataListPrev = recordDataList.slice(0);
