@@ -29,11 +29,20 @@ let video = true;
 let region = "eu";
 
 let autoPlay = true;
+let favorites = {};
 
 fetch('songList.json')
     .then(response => response.json())
     .then(data => {
         musicData = data;
+
+        const savedFav = JSON.parse(
+            localStorage.getItem(`${config.localStoragePrefix}-favorites`)
+        );
+
+        if (savedFav) {
+            favorites = savedFav;
+        }
     })
     .catch(error => {
         console.error("Error loading JSON:", error);
@@ -527,6 +536,13 @@ function autoSave() {
     localStorage.setItem(`${config.localStoragePrefix}-pointerPrev`, JSON.stringify(pointerPrev));
 
     localStorage.setItem(`${config.localStoragePrefix}-totalBattles`, JSON.stringify(totalBattles));
+}
+
+function saveFavorites() {
+    localStorage.setItem(
+        `${config.localStoragePrefix}-favorites`,
+        JSON.stringify(favorites)
+    );
 }
 
 function loadProgress() {
