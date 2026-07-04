@@ -122,31 +122,56 @@ function showDuel(id1, id2) {
             videoElement = "<div>MP3 not available!</div>";
         }
 
+const songIndex = music.id - 1;
+const isFav = favorites[songIndex];
+
+card.innerHTML = `
+  ${videoElement}
+  <div class="anime">
+    <span class="fav-star">${isFav ? "★" : "☆"}</span>
+    ${music.anime}
+  </div>
+  <div class="song">${music.name}</div>
+`;
+
+setTimeout(() => {
+    const star = card.querySelector(".fav-star");
+
+    if (!star) return;
+
+    star.style.cursor = "pointer";
+
+    star.addEventListener("click", (e) => {
+        e.stopPropagation();
+
         const songIndex = music.id - 1;
-        const isFav = favorites[songIndex];
-        
-        card.innerHTML = `
-          ${videoElement}
-            <div class="anime">
-              <span class="fav-star">${isFav ? "★" : "☆"}</span>
-              ${music.anime}
-            </div>
-            <div class="song">${music.name}</div>
-    `;
 
-        const button = document.createElement('button');
-        button.textContent = "PICK";
-        button.addEventListener('click', () => {
-            if (isLeft) {
-                pick('left');
-            } else {
-                pick('right');
-            }
-        });
+        if (favorites[songIndex]) {
+            delete favorites[songIndex];
+        } else {
+            favorites[songIndex] = true;
+        }
 
-        card.appendChild(button);
-        return card;
+        saveFavorites();
+
+        star.textContent = favorites[songIndex] ? "★" : "☆";
+    });
+}, 0);
+
+// PICKボタン
+const button = document.createElement('button');
+button.textContent = "PICK";
+button.addEventListener('click', () => {
+    if (isLeft) {
+        pick('left');
+    } else {
+        pick('right');
     }
+});
+
+card.appendChild(button);
+
+return card;
 
     if (id1 < musicData.length && id2 < musicData.length) {
         duelContainer.appendChild(createMusicCard(musicData[id1], true));
