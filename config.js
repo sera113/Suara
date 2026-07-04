@@ -1,5 +1,5 @@
 const config = {
-    localStoragePrefix: "絶対変える",
-    title: "適当",
+    localStoragePrefix: "Suara-pr",
+    title: "Suara",
     description: "-"
 };
