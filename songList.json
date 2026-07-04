@@ -1,352 +1,163 @@
 [
     {
         "id": 1,
-        "anime": "Futari wa Precure - Ending 1",
-        "name": "\"Get You! Love Love?!\" by Mayumi Gojou",
-        "video": "https://naedist.animemusicquiz.com/s67swe.webm",
-        "mp3": null
+        "anime": "Utawarerumono - Opening 1",
+        "name": "Musouka - Suara",
+        "video": "https://naedist.animemusicquiz.com/t5bzh7.webm",
+        "mp3": "https://naedist.animemusicquiz.com/kksj9x.mp3"
     },
     {
         "id": 2,
-        "anime": "Futari wa Precure Max Heart - Ending 1",
-        "name": "\"Muri Muri?! Ari Ari!! IN jaa Naai?!\" by Mayumi Gojou & Young Fresh",
-        "video": "https://naedist.animemusicquiz.com/jvyyk3.webm",
-        "mp3": null
+        "anime": "Utawarerumono - Ending 2",
+        "name": "Kimi ga Tame - Suara",
+        "video": "https://naedist.animemusicquiz.com/34njnq.webm",
+        "mp3": "https://naedist.animemusicquiz.com/au342f.mp3"
     },
     {
         "id": 3,
-        "anime": "Futari wa Precure Max Heart - Ending 2",
-        "name": "\"Wonder☆Winter☆Yatter!!\" by Mayumi Gojou",
-        "video": "https://naedist.animemusicquiz.com/7rwvi1.webm",
-        "mp3": null
+        "anime": "To Heart 2 - Ending 1",
+        "name": "Tomoshibi - Suara",
+        "video": "https://naedist.animemusicquiz.com/op30qu.webm",
+        "mp3": "https://naedist.animemusicquiz.com/c0j3hq.mp3"
     },
     {
         "id": 4,
-        "anime": "Futari wa Precure Splash★Star - Ending 1",
-        "name": "\"'Warau ga Kachi!' de GO!\" by Mayumi Gojou",
-        "video": "https://naedist.animemusicquiz.com/cd0dod.webm",
-        "mp3": null
+        "anime": "Asatte no Houkou. - Opening 1",
+        "name": "Hikari no Kisetsu - Suara",
+        "video": "https://naedist.animemusicquiz.com/anti78.webm",
+        "mp3": "https://naedist.animemusicquiz.com/iwa50r.mp3"
     },
     {
         "id": 5,
-        "anime": "Futari wa Precure Splash★Star - Ending 2",
-        "name": "\"Ganbalance de Dance\" by Mayumi Gojou with Flappy & Choppy's",
-        "video": "https://naedist.animemusicquiz.com/cgd124.webm",
-        "mp3": null
+        "anime": "Asatte no Houkou. - Insert Song",
+        "name": "Kasa - Suara",
+        "video": "https://naedist.animemusicquiz.com/om88x1.webm",
+        "mp3": "https://naedist.animemusicquiz.com/gr7m3l.mp3"
     },
     {
         "id": 6,
-        "anime": "Yes! Precure 5 - Ending 1",
-        "name": "\"Kirakira Shichatte MY True Love!\" by Kanako Miyamoto",
-        "video": "https://naedist.animemusicquiz.com/mbip75.webm",
-        "mp3": null
+        "anime": "To Heart 2 OVA - Opening 1",
+        "name": "Ichibanboshi - Suara",
+        "video": "https://naedist.animemusicquiz.com/un9669.webm",
+        "mp3": "https://naedist.animemusicquiz.com/4xi5v2.mp3"
     },
     {
         "id": 7,
-        "anime": "Yes! Precure 5 - Ending 2",
-        "name": "\"Ganbalance de Dance ~Yumemiru Kiseki-tachi~\" by Kanako Miyamoto with Precure 5",
-        "video": "https://naedist.animemusicquiz.com/tx6pep.webm",
-        "mp3": null
+        "anime": "To Heart 2 OVA - Ending 3",
+        "name": "I am - Suara",
+        "video": "https://naedist.animemusicquiz.com/cl9vwn.webm",
+        "mp3": "https://naedist.animemusicquiz.com/z796bh.mp3"
     },
     {
         "id": 8,
-        "anime": "Yes! Precure 5 GoGo! - Ending 1",
-        "name": "\"Te to Te Tsunaide Heart mo Link!!\" by Kanako Miyamoto feat. Young Fresh",
-        "video": "https://naedist.animemusicquiz.com/xsjghv.webm",
-        "mp3": null
+        "anime": "KimiKiss Pure Rouge - Ending 2",
+        "name": "Wasurenaide - Suara",
+        "video": "https://naedist.animemusicquiz.com/5y6j57.webm",
+        "mp3": "https://naedist.animemusicquiz.com/vhly7y.mp3"
     },
     {
         "id": 9,
-        "anime": "Yes! Precure 5 GoGo! - Ending 2",
-        "name": "\"Ganbalance de Dance ~Kibou no Relay~\" by Cure Quartet",
-        "video": "https://naedist.animemusicquiz.com/1ouc8y.webm",
-        "mp3": null
+        "anime": "Blue Drop: Tenshi-tachi no Gikyoku - Opening 1",
+        "name": "BLUE - Suara",
+        "video": "https://naedist.animemusicquiz.com/y5qgj6.webm",
+        "mp3": "https://naedist.animemusicquiz.com/px0ibz.mp3"
     },
     {
         "id": 10,
-        "anime": "Fresh Precure! - Ending 1",
-        "name": "\"You make me happy!\" by Momoko Hayashi",
-        "video": "https://naedist.animemusicquiz.com/fz8jo2.webm",
-        "mp3": null
+        "anime": "Blue Drop: Tenshi-tachi no Gikyoku - Ending 1",
+        "name": "Tsubomi -blue dreams- - Suara",
+        "video": "https://naedist.animemusicquiz.com/67s9d7.webm",
+        "mp3": "https://naedist.animemusicquiz.com/0pceg9.mp3"
     },
-        {
+    {
         "id": 11,
-        "anime": "Fresh Precure! - Ending 2",
-        "name": "\"H@ppy Together!!!\" by Momoko Hayashi",
-        "video": "https://naedist.animemusicquiz.com/11l3g7.webm",
-        "mp3": null
+        "anime": "Utawarerumono OVA - Opening 1",
+        "name": "adamant faith - Suara",
+        "video": "https://naedist.animemusicquiz.com/028uaf.webm",
+        "mp3": "https://naedist.animemusicquiz.com/zrpwrf.mp3"
     },
     {
         "id": 12,
-        "anime": "Heartcatch Precure! - Ending 1",
-        "name": "\"Heartcatch☆Paradise!\" by Mayu Kudou",
-        "video": "https://naedist.animemusicquiz.com/3hx9op.webm",
-        "mp3": null
+        "anime": "Tears to Tiara - Opening 1",
+        "name": "Free and Dream - Suara",
+        "video": "https://naedist.animemusicquiz.com/e6m1nj.webm",
+        "mp3": "https://naedist.animemusicquiz.com/aq2ve7.mp3"
     },
     {
         "id": 13,
-        "anime": "Heartcatch Precure! - Ending 2",
-        "name": "\"Tomorrow Song~Ashita no Uta~\" by Mayu Kudou",
-        "video": "https://naedist.animemusicquiz.com/toq6uu.webm",
-        "mp3": null
+        "anime": "Tears to Tiara - Ending 3",
+        "name": "memory - Suara",
+        "video": "https://naedist.animemusicquiz.com/i54k1f.webm",
+        "mp3": "https://naedist.animemusicquiz.com/ryir0v.mp3"
     },
     {
         "id": 14,
-        "anime": "Suite Precure♪ - Ending 1",
-        "name": "\"Wonderful↑Powerful↑Music!!\" by Aya Ikeda",
-        "video": "https://naedist.animemusicquiz.com/fl63ih.webm",
-        "mp3": null
+        "anime": "White Album - Ending 1",
+        "name": "Maiochiru Yuki no You ni - Suara",
+        "video": "https://naedist.animemusicquiz.com/l2vxaa.webm",
+        "mp3": "https://naedist.animemusicquiz.com/wd845j.mp3"
     },
     {
         "id": 15,
-        "anime": "Suite Precure♪ - Ending 2",
-        "name": "\"#Kibou Rainbow#\" by Aya Ikeda",
-        "video": "https://naedist.animemusicquiz.com/9s1e1y.webm",
-        "mp3": null
+        "anime": "To Heart 2 Dungeon Travelers - Opening 1",
+        "name": "Niji-iro no Mirai - Suara",
+        "video": "https://naedist.animemusicquiz.com/ll4gsz.webm",
+        "mp3": "https://naedist.animemusicquiz.com/wat5gn.mp3"
     },
     {
         "id": 16,
-        "anime": "Smile Precure! - Ending 1",
-        "name": "\"Yay! Yay! Yay!\" by Hitomi Yoshida",
-        "video": "https://naedist.animemusicquiz.com/4790bs.webm",
-        "mp3": null
+        "anime": "Cardfight!! Vanguard: Link Joker-hen - Ending 4",
+        "name": "Fly away -Oozora e- - Suara",
+        "video": "https://naedist.animemusicquiz.com/xvk5ci.webm",
+        "mp3": "https://naedist.animemusicquiz.com/sv1qy1.mp3"
     },
     {
         "id": 17,
-        "anime": "Smile Precure! - Ending 2",
-        "name": "\"Mankai*Smile\" by Hitomi Yoshida",
-        "video": "https://naedist.animemusicquiz.com/24gjt5.webm",
-        "mp3": null
+        "anime": "Future Card Buddyfight - Opening 1",
+        "name": "Card of the Future - Psychic Lover×Suara",
+        "video": "https://naedist.animemusicquiz.com/qk68o6.webm",
+        "mp3": "https://naedist.animemusicquiz.com/r00ur5.mp3"
     },
     {
         "id": 18,
-        "anime": "Dokidoki! Precure - Ending 1",
-        "name": "\"Kono Sora no Mukou\" by Hitomi Yoshida",
-        "video": "https://naedist.animemusicquiz.com/pu803p.webm",
-        "mp3": null
+        "anime": "Cardfight!! Vanguard: Legion Mate-hen - Opening 1",
+        "name": "V-ROAD - BUSHI★7",
+        "video": "https://naedist.animemusicquiz.com/k0wy80.webm",
+        "mp3": "https://naedist.animemusicquiz.com/jgszjl.mp3"
     },
     {
         "id": 19,
-        "anime": "Dokidoki! Precure - Ending 2",
-        "name": "\"Love Link\" by Hitomi Yoshida",
-        "video": "https://naedist.animemusicquiz.com/gdgevu.webm",
-        "mp3": null
+        "anime": "Gekijouban Cardfight!! Vanguard: Neon Messiah - Opening 1",
+        "name": "V-ROAD (symphony ver.) - BUSHI★7",
+        "video": "https://naedist.animemusicquiz.com/rwjgvl.webm",
+        "mp3": "https://naedist.animemusicquiz.com/tsqc2l.mp3"
     },
     {
         "id": 20,
-        "anime": "Happiness Charge Precure! - Ending 1",
-        "name": "\"Precure Memory\" by Hitomi Yoshida",
-        "video": "https://naedist.animemusicquiz.com/vwieu0.webm",
-        "mp3": null
+        "anime": "Nil Admirari no Tenbin - Insert Song",
+        "name": "Homura no Tori - Suara",
+        "video": "https://naedist.animemusicquiz.com/mbg39i.webm",
+        "mp3": "https://naedist.animemusicquiz.com/nuco8i.mp3"
     },
-        {
+    {
         "id": 21,
-        "anime": "Happiness Charge Precure! - Ending 2",
-        "name": "\"Party Has Come\" by Hitomi Yoshida",
-        "video": "https://naedist.animemusicquiz.com/qs1z25.webm",
-        "mp3": null
+        "anime": "Utawarerumono: Futari no Hakuoro - Ending 3",
+        "name": "Musouka 2016 - Suara",
+        "video": "https://naedist.animemusicquiz.com/b07ei8.webm",
+        "mp3": "https://naedist.animemusicquiz.com/yjs1u8.mp3"
     },
     {
         "id": 22,
-        "anime": "Go! Princess Precure - Ending 1",
-        "name": "\"Dreaming☆Princess Precure\" by Rie Kitagawa",
-        "video": "https://naedist.animemusicquiz.com/n6w31t.webm",
-        "mp3": null
+        "anime": "Utawarerumono: Futari no Hakuoro - Insert Song",
+        "name": "Kimi ga Tame 2016 - Suara",
+        "video": "https://naedist.animemusicquiz.com/nllynv.webm",
+        "mp3": "https://naedist.animemusicquiz.com/jxm0ux.mp3"
     },
     {
         "id": 23,
-        "anime": "Go! Princess Precure - Ending 2",
-        "name": "\"Yume wa Mirai e no Michi\" by Rie Kitagawa",
-        "video": "https://naedist.animemusicquiz.com/wangbc.webm",
-        "mp3": null
-    },
-    {
-        "id": 24,
-        "anime": "Mahoutsukai Precure! - Ending 1",
-        "name": "\"CURE UP↑RA♡PA☆PA~Hohoemi ni Naru Mahou~\" by Rie Takahashi・Yui Horie",
-        "video": "https://naedist.animemusicquiz.com/r9hpph.webm",
-        "mp3": null
-    },
-    {
-        "id": 25,
-        "anime": "Mahoutsukai Precure! - Ending 2",
-        "name": "\"Mahou à La Domo!\" by Rie Takahashi・Yui Horie・Saori Hayami",
-        "video": "https://naedist.animemusicquiz.com/8p33j2.webm",
-        "mp3": null
-    },
-    {
-        "id": 26,
-        "anime": "Kirakira☆Precure A La Mode - Ending 1",
-        "name": "\"Let's La Cooking☆Showtime\" by Kanako Miyamoto",
-        "video": "https://naedist.animemusicquiz.com/pw10y7.webm",
-        "mp3": null
-    },
-    {
-        "id": 27,
-        "anime": "Kirakira☆Precure A La Mode - Ending 2",
-        "name": "\"Shubidubi☆Sweets Time\" by Kanako Miyamoto",
-        "video": "https://naedist.animemusicquiz.com/fjgkcu.webm",
-        "mp3": null
-    },
-    {
-        "id": 28,
-        "anime": "Hugtto! Precure - Ending 1",
-        "name": "\"HUGtto! Mirai☆Dream\" by Rie Hikisaka, Rina Honnizumi, Yui Ogura",
-        "video": "https://naedist.animemusicquiz.com/dz4wrp.webm",
-        "mp3": null
-    },
-    {
-        "id": 29,
-        "anime": "Hugtto! Precure - Ending 2",
-        "name": "\"Kimi to Tomodachi\" by Nao Tamura & Yukari Tamura",
-        "video": "https://naedist.animemusicquiz.com/7x66e4.webm",
-        "mp3": null
-    },
-    {
-        "id": 30,
-        "anime": "Hugtto! Precure - Ending 4",
-        "name": "\"HUGtto! YELL FOR YOU\" by Rie Hikisaka, Rina Honnizumi, Yui Ogura, Nao Tamura, Yukari Tamura",
-        "video": "https://naedist.animemusicquiz.com/6bbehd.webm",
-        "mp3": null
-    },
-        {
-        "id": 31,
-        "anime": "Star☆Twinkle Precure - Ending 1",
-        "name": "\"Papepipu☆Romantic\" by Chihaya Yoshitake",
-        "video": "https://naedist.animemusicquiz.com/h1odqu.webm",
-        "mp3": null
-    },
-    {
-        "id": 32,
-        "anime": "Star☆Twinkle Precure - Ending 2",
-        "name": "\"Oshiete...! Twinkle☆\" by Chihaya Yoshitake",
-        "video": "https://naedist.animemusicquiz.com/6fkr81.webm",
-        "mp3": null
-    },
-    {
-        "id": 33,
-        "anime": "Healin' Good♡Precure - Ending 1",
-        "name": "\"Miracle-tto♥Link Ring!\" by Machico",
-        "video": "https://naedist.animemusicquiz.com/u212pq.webm",
-        "mp3": null
-    },
-    {
-        "id": 34,
-        "anime": "Healin' Good♡Precure - Ending 2",
-        "name": "\"Everybody☆Healin' Good Day!\" by Kanako Miyamoto",
-        "video": "https://naedist.animemusicquiz.com/0g5kex.webm",
-        "mp3": null
-    },
-    {
-        "id": 35,
-        "anime": "Tropical-Rouge! Precure - Ending 1",
-        "name": "\"Tropica I・N・G\" by Chihaya Yoshitake",
-        "video": "https://naedist.animemusicquiz.com/saqgz4y8e04bey1s.webm",
-        "mp3": null
-    },
-    {
-        "id": 36,
-        "anime": "Tropical-Rouge! Precure - Ending 2",
-        "name": "\"Akogare Go My Way!!\" by Rie Kitagawa・Chihaya Yoshitake",
-        "video": "https://naedist.animemusicquiz.com/cxi8tn2s77qbh1j4.webm",
-        "mp3": null
-    },
-    {
-        "id": 37,
-        "anime": "Delicious Party♡Precure - Ending 1",
-        "name": "\"DELICIOUS HAPPY DAYS♪\" by Chihaya Yoshitake",
-        "video": "https://naedist.animemusicquiz.com/nq57v3bgv2r4xglq.webm",
-        "mp3": null
-    },
-    {
-        "id": 38,
-        "anime": "Delicious Party♡Precure - Ending 2",
-        "name": "\"Kokoro Delicious\" by Rico Sasaki",
-        "video": "https://naedist.animemusicquiz.com/z3hbeu9ebf7qr5ds.webm",
-        "mp3": null
-    },
-    {
-        "id": 39,
-        "anime": "Hirogaru Sky! Precure - Ending 1",
-        "name": "\"Hirogarism\" by Ami Ishii・Chihaya Yoshitake",
-        "video": "https://naedist.animemusicquiz.com/hd0ku6.webm",
-        "mp3": null
-    },
-    {
-        "id": 40,
-        "anime": "Hirogaru Sky! Precure - Ending 2",
-        "name": "\"Dear Shine Sky\" by Chihaya Yoshitake",
-        "video": "https://naedist.animemusicquiz.com/5gwk81.webm",
-        "mp3": null
-    },
-        {
-        "id": 41,
-        "anime": "Hirogaru Sky! Precure - Ending 3",
-        "name": "\"Hirogarism ~Precure Quintet Ver.~\" by Akira Sekine・Ai Kakuma・Ayumu Murase・Ayaka Nanase・Aoi Koga",
-        "video": "https://naedist.animemusicquiz.com/v0kfcy.webm",
-        "mp3": null
-    },
-    {
-        "id": 42,
-        "anime": "Kibou no Chikara: Otona Precure '23 - Ending 1",
-        "name": "\"Shizuku no Precure\" by Cure Quartet",
-        "video": "https://naedist.animemusicquiz.com/img83z.webm",
-        "mp3": null
-    },
-    {
-        "id": 43,
-        "anime": "Mahoutsukai Precure!!: Mirai Days - Ending 1",
-        "name": "\"Kisekira Link\" by Rie Takahashi・Yui Horie・Saori Hayami",
-        "video": "https://naedist.animemusicquiz.com/i32kq7.webm",
-        "mp3": null
-    },
-    {
-        "id": 44,
-        "anime": "Wonderful Precure! - Ending 1",
-        "name": "\"FUN☆FUN☆Wonderful DAYS!\" by Ami Ishii & Moeha Nochimoto",
-        "video": "https://naedist.animemusicquiz.com/97mfty.webm",
-        "mp3": null
-    },
-    {
-        "id": 45,
-        "anime": "Wonderful Precure! - Ending 2",
-        "name": "\"Shiawase Evolution♡ ~Komugi & Iroha Ver.~\" by Ami Ishii & Moeha Nochimoto",
-        "video": "https://naedist.animemusicquiz.com/4g6xdu.webm",
-        "mp3": null
-    },
-    {
-        "id": 46,
-        "anime": "Wonderful Precure! - Ending 3",
-        "name": "\"Shiawase Evolution♡ ~Yuki & Mayu Ver.~\" by Ami Ishii & Moeha Nochimoto",
-        "video": "https://naedist.animemusicquiz.com/5pe8dt.webm",
-        "mp3": null
-    },
-    {
-        "id": 47,
-        "anime": "Wonderful Precure! - Ending 5",
-        "name": "\"Wonderful Smile\" by Ami Ishii",
-        "video": "https://naedist.animemusicquiz.com/zetmbq.webm",
-        "mp3": null
-    },
-    {
-        "id": 48,
-        "anime": "Kimi to Idol Precure♪ - Ending 1",
-        "name": "\"Trio Dreams\" by Natsumi Takamori, Minami Takahashi, Misato Matsuoka",
-        "video": "https://naedist.animemusicquiz.com/0lwhu0.webm",
-        "mp3": null
-    },
-    {
-        "id": 49,
-        "anime": "Kimi to Idol Precure♪ - Ending 2",
-        "name": "\"Kimi to Lulala\" by Misato Matsuoka, Minami Takahashi, Natsumi Takamori, Yoshino Nanjo, Miharu Hanai",
-        "video": "https://naedist.animemusicquiz.com/a6ckqoli0haksrmy.webm",
-        "mp3": null
-    },
-    {
-        "id": 50,
-        "anime": "Meitantei Precure! - Ending 1",
-        "name": "\"Naze? Nazo?! ANSWER\" by Akane Kumada & Yuka Masui",
-        "video": "https://naedist.animemusicquiz.com/havboiqa2v48ktz0.webm",
-        "mp3": null
+        "anime": "White Album - Ending 1",
+        "name": "Akai Ito - Suara",
+        "video": "https://naedist.animemusicquiz.com/vnkkzy.webm",
+        "mp3": "https://naedist.animemusicquiz.com/eb5hp3.mp3"
     }
 ]
