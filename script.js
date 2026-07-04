@@ -122,10 +122,16 @@ function showDuel(id1, id2) {
             videoElement = "<div>MP3 not available!</div>";
         }
 
+        const songIndex = music.id - 1;
+        const isFav = favorites[songIndex];
+        
         card.innerHTML = `
-      ${videoElement}
-      <div class="anime">${music.anime}</div>
-      <div class="song">${music.name}</div>
+          ${videoElement}
+            <div class="anime">
+              <span class="fav-star">${isFav ? "★" : "☆"}</span>
+              ${music.anime}
+            </div>
+            <div class="song">${music.name}</div>
     `;
 
         const button = document.createElement('button');
