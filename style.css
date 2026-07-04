@@ -306,18 +306,6 @@ td {
   /* Limite la largeur pour forcer le texte à se tronquer */
 }
 
-
-.anime {
-    display: flex;
-    align-items: center;
-    gap: 6px;
-}
-
-.fav-star {
-    font-size: 18px;
-    color: gold;
-}
-
 table th,
 table td {
   text-overflow: ellipsis;
