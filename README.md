@@ -1,4 +1,4 @@
-# Party Ranking Sorter
+# Party Ranking Sorter 
 
 This project is a simple single-page application template that allows users to rank songs from a list by comparing them in duels.
 
