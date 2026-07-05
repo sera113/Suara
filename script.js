@@ -130,7 +130,7 @@ function showDuel(id1, id2) {
 
     <div class="anime">
         <button class="favorite-button ${isFavorite ? "active" : ""}">
-            ${isFavorite ? "♥" : "♡"}
+            ${isFavorite ? "★" : "☆"}
         </button>
 
         <span>${music.anime}</span>
@@ -150,7 +150,7 @@ favoriteButton.addEventListener("click", (e) => {
     favoriteButton.classList.toggle("active");
 
     favoriteButton.textContent =
-        favorites.includes(music.id) ? "♥" : "♡";
+        favorites.includes(music.id) ? "★" : "☆";
 
 });
         
