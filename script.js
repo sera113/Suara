@@ -473,6 +473,29 @@ function closeFavorites() {
 
 }
 
+function renderFavorites() {
+
+    const list = document.getElementById("favoritesList");
+
+    list.innerHTML = "";
+
+    favorites.forEach(id => {
+
+        const music = musicData.find(m => m.id === id);
+
+        if (!music) return;
+
+        const row = document.createElement("div");
+
+        row.textContent =
+            `${music.id}. ${music.anime} - ${music.name}`;
+
+        list.appendChild(row);
+
+    });
+
+}
+
 function selectOption(type, element) {
     let buttons = document.querySelectorAll(`.option-button[data-type='${type}']`);
     buttons.forEach(btn => btn.classList.remove("active"));
