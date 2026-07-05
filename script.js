@@ -454,11 +454,12 @@ function showSettings() {
 
 function showFavorites() {
 
+    closeSettings();
+
     renderFavorites();
 
     document.getElementById("favoritesModal").style.display = "block";
     document.getElementById("modalOverlay").style.display = "block";
-
 }
 
 function closeSettings() {
