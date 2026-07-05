@@ -452,9 +452,25 @@ function showSettings() {
     document.getElementById("modalOverlay").style.display = "block";
 }
 
+function showFavorites() {
+
+    renderFavorites();
+
+    document.getElementById("favoritesModal").style.display = "block";
+    document.getElementById("modalOverlay").style.display = "block";
+
+}
+
 function closeSettings() {
     document.getElementById("settingsModal").style.display = "none";
     document.getElementById("modalOverlay").style.display = "none";
+}
+
+function closeFavorites() {
+
+    document.getElementById("favoritesModal").style.display = "none";
+    document.getElementById("modalOverlay").style.display = "none";
+
 }
 
 function selectOption(type, element) {
