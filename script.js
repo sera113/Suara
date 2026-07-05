@@ -56,7 +56,7 @@ const savedFavorites = JSON.parse(
     localStorage.getItem(`${config.localStoragePrefix}-favorites`)
 );
 
-if (savedFavorites !== null) {
+if (savedFavorites) {
     favorites = savedFavorites;
 }
 
@@ -94,6 +94,8 @@ function showDuel(id1, id2) {
     function createMusicCard(music, isLeft) {
         const card = document.createElement('div');
         card.className = 'music-card';
+        
+        const isFavorite = favorites.includes(music.id);
 
         let videoElement;
 
@@ -124,18 +126,33 @@ function showDuel(id1, id2) {
         }
 
         card.innerHTML = `
-      <button class="favorite-button">
-        ${favorites.includes(music.id) ? "★" : "☆"}
-      </button>
+    ${videoElement}
 
-      ${videoElement}
+    <div class="anime">
+        <button class="favorite-button ${isFavorite ? "active" : ""}">
+            ${isFavorite ? "★" : "☆"}
+        </button>
 
-      <div class="anime">${music.anime}</div>
+        <span>${music.anime}</span>
+    </div>
 
-      <div class="song">${music.name}</div>
-    `;
+    <div class="song">${music.name}</div>
+`;
 
         const favoriteButton = card.querySelector(".favorite-button");
+
+favoriteButton.addEventListener("click", (e) => {
+
+    e.stopPropagation();
+
+    toggleFavorite(music.id);
+
+    favoriteButton.classList.toggle("active");
+
+    favoriteButton.textContent =
+        favorites.includes(music.id) ? "★" : "☆";
+
+});
 
 favoriteButton.addEventListener("click", () => {
     toggleFavorite(music.id, favoriteButton);
@@ -488,20 +505,22 @@ function toggleAutoplay(checkbox) {
     );
 }
 
-function toggleFavorite(id, button) {
+function toggleFavorite(id) {
 
     if (favorites.includes(id)) {
+
         favorites = favorites.filter(x => x !== id);
+
     } else {
+
         favorites.push(id);
+
     }
 
     localStorage.setItem(
         `${config.localStoragePrefix}-favorites`,
         JSON.stringify(favorites)
     );
-
-    button.textContent = favorites.includes(id) ? "★" : "☆";
 }
 
 function copyToClipboard() {
