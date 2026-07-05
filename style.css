@@ -190,7 +190,7 @@ body {
   height: 10%;
 }
 
-.music-card button {
+.music-card button.pick-button {
   padding: 10px;
   background-color: #40ab47a6;
   color: #e5e5e5;
@@ -203,7 +203,7 @@ body {
   box-sizing: border-box;
 }
 
-.music-card button:hover {
+.music-card button.pick-button:hover {
   background-color: #45a049;
 }
 
