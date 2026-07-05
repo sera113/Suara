@@ -31,6 +31,14 @@ let region = "eu";
 let autoPlay = true;
 let favorites = [];
 
+const savedFavorites = JSON.parse(
+    localStorage.getItem(`${config.localStoragePrefix}-favorites`)
+);
+
+if (savedFavorites !== null) {
+    favorites = savedFavorites;
+}
+
 
 fetch('songList.json')
     .then(response => response.json())
@@ -50,14 +58,6 @@ const savedAutoPlay = JSON.parse(
 
 if (savedAutoPlay !== null) {
     autoPlay = savedAutoPlay;
-}
-
-const savedFavorites = JSON.parse(
-    localStorage.getItem(`${config.localStoragePrefix}-favorites`)
-);
-
-if (savedFavorites) {
-    favorites = savedFavorites;
 }
 
 window.addEventListener("DOMContentLoaded", () => {
@@ -509,13 +509,9 @@ function toggleAutoplay(checkbox) {
 function toggleFavorite(id) {
 
     if (favorites.includes(id)) {
-
         favorites = favorites.filter(x => x !== id);
-
     } else {
-
         favorites.push(id);
-
     }
 
     localStorage.setItem(
