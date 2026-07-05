@@ -114,10 +114,22 @@ function showDuel(id1, id2) {
         }
 
         card.innerHTML = `
+      <button class="favorite-button">
+        ${favorites.includes(music.id) ? "★" : "☆"}
+      </button>
+
       ${videoElement}
+
       <div class="anime">${music.anime}</div>
+
       <div class="song">${music.name}</div>
     `;
+
+        const favoriteButton = card.querySelector(".favorite-button");
+
+favoriteButton.addEventListener("click", () => {
+    toggleFavorite(music.id, favoriteButton);
+});
 
         const button = document.createElement('button');
         button.textContent = "PICK";
