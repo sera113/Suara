@@ -159,6 +159,7 @@ favoriteButton.addEventListener("click", () => {
 });
 
         const button = document.createElement('button');
+        button.classList.add("pick-button");
         button.textContent = "PICK";
         button.addEventListener('click', () => {
             if (isLeft) {
