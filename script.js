@@ -153,11 +153,7 @@ favoriteButton.addEventListener("click", (e) => {
         favorites.includes(music.id) ? "♥" : "♡";
 
 });
-
-favoriteButton.addEventListener("click", () => {
-    toggleFavorite(music.id, favoriteButton);
-});
-
+        
         const button = document.createElement('button');
         button.classList.add("pick-button");
         button.textContent = "PICK";
