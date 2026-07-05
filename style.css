@@ -312,4 +312,34 @@ table th,
 table td {
   text-overflow: ellipsis;
 }
+
+.favorite-button{
+
+    position:absolute;
+
+    top:15px;
+
+    right:15px;
+
+    background:none;
+
+    border:none;
+
+    color:gold;
+
+    font-size:32px;
+
+    cursor:pointer;
+
+    width:auto;
+
+    padding:0;
+
+    transition:.2s;
+}
  
+.favorite-button:hover{
+
+    transform:scale(1.2);
+
+}
