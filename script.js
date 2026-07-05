@@ -31,6 +31,7 @@ let region = "eu";
 let autoPlay = true;
 let favorites = [];
 
+
 fetch('songList.json')
     .then(response => response.json())
     .then(data => {
