@@ -345,6 +345,6 @@ table td {
 }
 
 .favorite-button.active {
-    color: #ff4d6d;
-    text-shadow: 0 0 8px rgba(255,77,109,.7);
+    color: gold;
+    text-shadow: 0 0 8px gold;
 }
