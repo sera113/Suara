@@ -174,7 +174,10 @@ body {
 }
 
 .music-card .anime {
-  align-content: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   font-size: 2.2vh;
   color: #a0ffac;
   height: 10%;
@@ -313,33 +316,23 @@ table td {
   text-overflow: ellipsis;
 }
 
-.favorite-button{
-
-    position:absolute;
-
-    top:15px;
-
-    right:15px;
-
-    background:none;
-
-    border:none;
-
-    color:gold;
-
-    font-size:32px;
-
-    cursor:pointer;
-
-    width:auto;
-
-    padding:0;
-
-    transition:.2s;
+.favorite-button {
+    background: none;
+    border: none;
+    color: #888;
+    font-size: 22px;
+    cursor: pointer;
+    width: auto;
+    padding: 0;
+    margin-right: 8px;
+    transition: .2s;
 }
- 
-.favorite-button:hover{
 
-    transform:scale(1.2);
+.favorite-button:hover {
+    transform: scale(1.2);
+}
 
+.favorite-button.active {
+    color: gold;
+    text-shadow: 0 0 8px gold;
 }
