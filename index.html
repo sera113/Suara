@@ -32,6 +32,18 @@
       <button class="option-button" data-type="format" onclick="selectOption('format', this)">Audio</button>
     </div>
 
+    <div class="modal" id="favoritesModal">
+
+      <h2>Favorites</h2>
+
+      <div id="favoritesList"></div>
+
+      <button class="close-button" onclick="closeFavorites()">
+          Close
+      </button>
+
+    </div>
+
     <div class="option-group">
       <p>Region:</p>
       <button class="option-button active" data-type="region" onclick="selectOption('region', this)">Europe</button>
