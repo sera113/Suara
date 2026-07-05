@@ -174,13 +174,14 @@ body {
 }
 
 .music-card .anime {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
 
-  font-size: 2.2vh;
-  color: #a0ffac;
-  height: 10%;
+    font-size: 2.2vh;
+    color: #a0ffac;
+    height: 10%;
 }
 
 .music-card .song {
@@ -317,15 +318,26 @@ table td {
 }
 
 .favorite-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     background: none;
     border: none;
+
+    width: 24px;
+    height: 24px;
+
+    padding: 0;
+    margin: 0;
+
     color: #888;
     font-size: 22px;
+    line-height: 1;
+
     cursor: pointer;
-    width: auto;
-    padding: 0;
-    margin-right: 8px;
     transition: .2s;
+    flex-shrink: 0;
 }
 
 .favorite-button:hover {
