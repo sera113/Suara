@@ -360,3 +360,24 @@ table td {
     line-height: 1;
 }
 
+#favoritesList {
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+#favoritesList div {
+    padding: 8px 10px;
+    border-bottom: 1px solid rgba(255,255,255,.15);
+    color: white;
+    font-family: monospace;
+}
+
+#favoritesList a {
+    color: #7fc7ff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#favoritesList a:hover {
+    text-decoration: underline;
+}
