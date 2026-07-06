@@ -482,6 +482,7 @@ function renderFavorites() {
     <table id="favoritesTable">
         <thead>
             <tr>
+                <th>★</th>
                 <th>ID</th>
                 <th>Anime</th>
                 <th>Song</th>
@@ -515,12 +516,23 @@ function renderFavorites() {
         : "-";
 
     row.innerHTML = `
+        <td><button class="favorite-remove">★</button></td>
         <td>${music.id}</td>
         <td>${music.anime}</td>
         <td>${songInfo}</td>
         <td>${videoLink}</td>
         <td>${mp3Link}</td>
     `;
+
+    const removeButton = row.querySelector(".favorite-remove");
+
+    removeButton.addEventListener("click", () => {
+
+        toggleFavorite(music.id);
+
+        renderFavorites();
+
+    });    
 
     tbody.appendChild(row);
 
