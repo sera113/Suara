@@ -392,3 +392,30 @@ table td {
     max-height: 60vh;
     overflow-y: auto;
 }
+
+#favoritesTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+#favoritesTable th,
+#favoritesTable td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid rgba(255,255,255,.15);
+}
+
+#favoritesTable th {
+    background: rgba(255,255,255,.08);
+    font-weight: bold;
+}
+
+#favoritesTable a {
+    color: #7fc7ff;
+    text-decoration: none;
+}
+
+#favoritesTable a:hover {
+    text-decoration: underline;
+}
