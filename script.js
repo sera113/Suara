@@ -29,7 +29,6 @@ let video = true;
 let region = "eu";
 
 let autoPlay = true;
-
 let favorites = [];
 
 const savedFavorites = JSON.parse(
