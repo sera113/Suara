@@ -478,7 +478,23 @@ function renderFavorites() {
 
     const list = document.getElementById("favoritesList");
 
-    list.innerHTML = "";
+    list.innerHTML = `
+    <table id="favoritesTable">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Anime</th>
+                <th>Song</th>
+                <th>Video</th>
+                <th>MP3</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+    `;
+
+    const tbody = document.querySelector("#favoritesTable tbody");
 
     favorites.forEach(id => {
 
