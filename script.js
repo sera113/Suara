@@ -497,11 +497,13 @@ function renderFavorites() {
 
     const tbody = document.querySelector("#favoritesTable tbody");
 
-    favorites.forEach(id => {
+    [...favorites]
+        .sort((a, b) => a - b)
+        .forEach(id => {
 
-    const music = musicData.find(m => m.id === id);
+        const music = musicData.find(m => m.id === id);
 
-    if (!music) return;
+        if (!music) return;
 
     const row = document.createElement("tr");
 
