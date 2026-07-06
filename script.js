@@ -482,17 +482,29 @@ function renderFavorites() {
 
     favorites.forEach(id => {
 
-        const music = musicData.find(m => m.id === id);
+    const music = musicData.find(m => m.id === id);
 
-        if (!music) return;
+    if (!music) return;
 
-        const row = document.createElement("div");
+    const row = document.createElement("div");
 
-        row.textContent =
-            `${music.id}. ${music.anime} - ${music.name}`;
+    const artist = music.artist
+        ? ` by ${music.artist}`
+        : "";
 
-        list.appendChild(row);
+    const videoLink = music.video
+        ? `<a href="${music.video}" target="_blank">Video</a>`
+        : "-";
 
+    const mp3Link = music.mp3
+        ? `<a href="${music.mp3}" target="_blank">MP3</a>`
+        : "-";
+
+    row.innerHTML =
+        `${music.id} | ${music.anime} | ${music.name}${artist} | ${videoLink} | ${mp3Link}`;
+
+    list.appendChild(row);
+        
     });
 
 }
