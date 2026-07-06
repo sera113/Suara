@@ -524,6 +524,8 @@ function renderFavorites() {
         <td>${mp3Link}</td>
     `;
 
+    const favoriteButton = row.querySelector(".favorite-button");    
+
     favoriteButton.addEventListener("click", () => {
 
         toggleFavorite(music.id);
