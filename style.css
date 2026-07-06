@@ -127,6 +127,11 @@ body {
   height: 2em;
   margin-left: 10px;
   margin-right: 10px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
 }
 
 .basic-button:hover {
@@ -349,3 +354,8 @@ table td {
     text-shadow: 0 0 8px gold;
 }
 
+.favorite-icon {
+    color: gold;
+    font-size: 1.1em;
+    line-height: 1;
+}
