@@ -528,13 +528,21 @@ function renderFavorites() {
 
     favoriteButton.addEventListener("click", () => {
 
-        toggleFavorite(music.id);
+    toggleFavorite(music.id);
+
+    if (favorites.includes(music.id)) {
+
+        favoriteButton.classList.add("active");
+        favoriteButton.textContent = "★";
+
+    } else {
 
         favoriteButton.classList.remove("active");
         favoriteButton.textContent = "☆";
 
-});
+    }
 
+});
     tbody.appendChild(row);
 
 });
