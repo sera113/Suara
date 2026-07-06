@@ -382,3 +382,13 @@ table td {
     text-decoration: underline;
 }
 
+#favoritesModal {
+    width: 900px;
+    max-width: 90vw;
+    max-height: 80vh;
+}
+
+#favoritesList {
+    max-height: 60vh;
+    overflow-y: auto;
+}
