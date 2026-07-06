@@ -432,3 +432,7 @@ table td {
 .favorite-remove:hover {
     transform: scale(1.2);
 }
+
+.favorite-remove.active {
+    color: gold;
+}
