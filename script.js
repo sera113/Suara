@@ -685,4 +685,3 @@ function loadProgress() {
         showDuel(sortedIndexList[leftIndex][leftInnerIndex], sortedIndexList[rightIndex][rightInnerIndex]);
     }
 }
-
