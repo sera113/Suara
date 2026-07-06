@@ -488,9 +488,7 @@ function renderFavorites() {
 
     const row = document.createElement("div");
 
-    const artist = music.artist
-        ? ` by ${music.artist}`
-        : "";
+    const songInfo = music.name.replace(" - ", " by ");
 
     const videoLink = music.video
         ? `<a href="${music.video}" target="_blank">Video</a>`
@@ -501,7 +499,7 @@ function renderFavorites() {
         : "-";
 
     row.innerHTML =
-        `${music.id} | ${music.anime} | ${music.name}${artist} | ${videoLink} | ${mp3Link}`;
+        `${music.id} | ${music.anime} | ${songInfo} | ${videoLink} | ${mp3Link}`;
 
     list.appendChild(row);
         
