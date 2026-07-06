@@ -305,7 +305,13 @@ function start() {
     favoriteButton.textContent = "Favorites";
     favoriteButton.addEventListener("click", showFavorites);
 
+    let button1 = document.createElement("button");
+    button1.classList.add("basic-button");
+    button1.textContent = "Undo";
+    button1.addEventListener("click", undo);
+
     let container = document.querySelector(".button-container");
+
     container.appendChild(favoriteButton);
     container.appendChild(button1);
 
