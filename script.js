@@ -502,7 +502,7 @@ function renderFavorites() {
 
     if (!music) return;
 
-    const row = document.createElement("div");
+    const row = document.createElement("tr");
 
     const songInfo = music.name.replace(" - ", " by ");
 
@@ -514,12 +514,17 @@ function renderFavorites() {
         ? `<a href="${music.mp3}" target="_blank">MP3</a>`
         : "-";
 
-    row.innerHTML =
-        `${music.id} | ${music.anime} | ${songInfo} | ${videoLink} | ${mp3Link}`;
+    row.innerHTML = `
+        <td>${music.id}</td>
+        <td>${music.anime}</td>
+        <td>${songInfo}</td>
+        <td>${videoLink}</td>
+        <td>${mp3Link}</td>
+    `;
 
-    list.appendChild(row);
-        
-    });
+    tbody.appendChild(row);
+
+});
 
 }
 
