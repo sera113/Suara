@@ -420,15 +420,6 @@ table td {
     text-decoration: underline;
 }
 
-.favorite-remove {
-    background: none;
-    border: none;
-    color: gold;
-    font-size: 20px;
-    cursor: pointer;
-    padding: 0;
-}
-
 .favorite-remove:hover {
     transform: scale(1.2);
 }
