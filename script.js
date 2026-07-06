@@ -295,19 +295,12 @@ function start() {
     document.getElementById("start").style.display = "none";
     document.getElementById("load").style.display = "none";
 
-    let favoriteButton = document.createElement("button");
-    favoriteButton.classList.add("basic-button");
-    favoriteButton.textContent = "Favorites";
-    favoriteButton.addEventListener("click", showFavorites);
-
     let button1 = document.createElement("button");
     button1.classList.add("basic-button");
     button1.textContent = "Undo";
     button1.addEventListener("click", undo);
 
     let container = document.querySelector(".button-container");
-
-    container.appendChild(favoriteButton);
     container.appendChild(button1);
 
     musicDataToSort = musicData.slice(0);
@@ -668,11 +661,6 @@ function loadProgress() {
         document.getElementById("start").style.display = "none";
         document.getElementById("load").style.display = "none";
 
-        let favoriteButton = document.createElement("button");
-        favoriteButton.classList.add("basic-button");
-        favoriteButton.textContent = "Favorites";
-        favoriteButton.addEventListener("click", showFavorites);
-
         let button1 = document.createElement("button");
         button1.classList.add("basic-button");
         button1.textContent = "Undo";
@@ -680,7 +668,6 @@ function loadProgress() {
 
         let container = document.querySelector(".button-container");
 
-        container.appendChild(favoriteButton);
         container.appendChild(button1);
 
         document.querySelector('.progress-container').removeAttribute("hidden");
