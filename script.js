@@ -31,6 +31,9 @@ let region = "eu";
 let autoPlay = true;
 let favorites = [];
 
+let previousLeftId = null;
+let previousRightId = null;
+
 const savedFavorites = JSON.parse(
     localStorage.getItem(`${config.localStoragePrefix}-favorites`)
 );
@@ -179,13 +182,16 @@ favoriteButton.addEventListener("click", (e) => {
     const percent = Math.floor(sortedNo * 100 / totalBattles);
     progressBar(`Battle no. ${battleNo}`, percent);
 
-    if (autoPlay) {
-        autoPlaySequential();
-}
+   if (autoPlay) {
+       autoPlaySequential(id1, id2);
+    }
+
+    previousLeftId = id1;
+    previousRightId = id2;
 
 }     
 
-function autoPlaySequential() {
+function autoPlaySequential(leftId, rightId) {
     if (!autoPlay) return;
 
     const media = document.querySelectorAll(".music-card audio, .music-card video");
@@ -197,7 +203,21 @@ function autoPlaySequential() {
         m.currentTime = 0;
     });
 
-    let current = 0;
+    let current;
+
+    if (leftId !== previousLeftId) {
+
+        current = 0;
+
+    } else if (rightId !== previousRightId) {
+
+        current = 1;
+
+    } else {
+
+        current = 0;
+
+}
 
     function playCurrent() {
         if (current >= media.length) return;
