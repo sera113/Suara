@@ -219,21 +219,40 @@ function autoPlaySequential(leftId, rightId) {
 
 }
 
+    let playOrder;
+
+if (current === 0) {
+    playOrder = [0, 1];
+} else {
+    playOrder = [1, 0];
+}
+
+let index = 0;
+
     function playCurrent() {
 
-    media[current].play().catch(err => console.log(err));
+        if (index >= playOrder.length) return;
 
-    media[current].onended = () => {
+        const mediaElement = media[playOrder[index]];
 
-        current = (current === 0) ? 1 : 0;
-
-        if (media[current]) {
+        if (!mediaElement) {
+            index++;
             playCurrent();
+            return;
         }
 
-    };
+        mediaElement.play().catch(err => console.log(err));
 
-}
+        mediaElement.onended = () => {
+            index++;
+            playCurrent();
+        };
+
+    }
+
+    playCurrent();
+    
+}    
     
 function pick(sortType) {
     
