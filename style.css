@@ -354,12 +354,6 @@ table td {
     text-shadow: 0 0 8px gold;
 }
 
-.favorite-icon {
-    color: gold;
-    font-size: 1.1em;
-    line-height: 1;
-}
-
 #favoritesList {
     max-height: 400px;
     overflow-y: auto;
