@@ -220,19 +220,21 @@ function autoPlaySequential(leftId, rightId) {
 }
 
     function playCurrent() {
-        if (current >= media.length) return;
 
-        media[current].play().catch(err => console.log(err));
+    media[current].play().catch(err => console.log(err));
 
-        media[current].onended = () => {
-            current++;
+    media[current].onended = () => {
+
+        current = (current === 0) ? 1 : 0;
+
+        if (media[current]) {
             playCurrent();
-        };
-    }
+        }
 
-    playCurrent();
+    };
+
 }
-
+    
 function pick(sortType) {
     
     document.querySelectorAll("audio, video").forEach(m => {
